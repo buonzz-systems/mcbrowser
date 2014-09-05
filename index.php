@@ -4,10 +4,6 @@ include "header.php";
 
 require "config.php";
 require "init.php";
-
-$keys = $memcached->getAllKeys();
-$servers = $memcached->getStats();
-
 ?>
  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">     
  	<?php include "header_menu.php";?>
