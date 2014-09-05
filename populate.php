@@ -10,3 +10,5 @@ $items = array(
     'key3' => 'value3'
 );
 $memcached->setMulti($items, time() + 300);
+
+header('location:index.php');
