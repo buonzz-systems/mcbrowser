@@ -1,7 +1,9 @@
 {
     "name": "buonzz/mcbrowser",
     "description": "An admin to browse Memcached Contents",
+    "keywords": ["memcached", "admin", "browse"],
     "license": "MIT",
+    "type": "project",
     "authors": [
         {
             "name": "Darwin Biler",
@@ -9,5 +11,8 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {}
+    "require": {
+        "php": ">=5.2",
+        "ext-memcached": "*"
+    }
 }
