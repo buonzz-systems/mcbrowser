@@ -1,0 +1,13 @@
+{
+    "name": "buonzz/mcbrowser",
+    "description": "An admin to browse Memcached Contents",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Darwin Biler",
+            "email": "buonzz@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
