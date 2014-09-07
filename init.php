@@ -1,6 +1,8 @@
 <?php
 
 $memcached = new Memcached();
-$memcached->addServer(HOSTNAME, PORT);
+
+foreach($servers as $server)
+	connect($server['hostname'], $server['port']);
+
 $keys = $memcached->getAllKeys();
-$servers = $memcached->getStats();

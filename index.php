@@ -3,7 +3,11 @@
 include "header.php";
 
 require "config.php";
+require "functions.php";
 require "init.php";
+
+$server_stats= $memcached->getStats();
+
 ?>
  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">     
  	<?php include "header_menu.php";?>
@@ -25,7 +29,7 @@ require "init.php";
               </thead>
               <tbody>
               <?php
-                foreach($servers as $server=>$stats)
+                foreach($server_stats as $server=>$stats)
                 {
                   foreach($stats as $statk => $statv)
                   {

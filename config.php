@@ -1,5 +1,7 @@
 <?php
 
-define('HOSTNAME', 'localhost');
-define('PORT', '11211');
+$servers = array(
+		local=> array(
+			'hostname'=>'localhost', 'port'=> '11211')
+	);
 
