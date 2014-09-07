@@ -10,10 +10,8 @@
   </div>
   <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="add_key.php">Create new Entry</a></li>      
-    </ul>
-    <form class="navbar-form navbar-right">
-      <input type="text" class="form-control" placeholder="Search...">
-    </form>
+      <li><a href="add_key.php">Create new Entry</a></li>
+      <li><a href="flush_all.php">Flush All</a></li>      
+    </ul>    
   </div>
 </div>

@@ -77,4 +77,12 @@ function result_code_to_string($result_code){
 		return 'Unknown Error : Error Code' . $result_code;
 }
 
+function limit_string($orig, $chars){
+	if(strlen($orig) > $chars)
+		$output = substr($orig,0,$chars) . '...';
+	else
+		$output = $orig;
+	return $output;
+}
+
 ?>

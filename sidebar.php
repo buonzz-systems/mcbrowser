@@ -11,11 +11,11 @@ if(count($keys)>0)
   foreach($keys as $k)
   {
   	if($selected_key == $k)
-    	echo '<li class="active"><a href="show_key.php?key='.$k.'">'.$k.'</a></li>';
+    	echo '<li class="active"><a href="show_key.php?key='.$k.'"><span class="glyphicon glyphicon-file"></span>&nbsp;'. limit_string($k, 20).'</a></li>';
     elseif($selected_key == '')
-    	echo '<li><a href="show_key.php?key='.$k.'">'.$k.'</a></li>';
+    	echo '<li><a href="show_key.php?key='.$k.'"><span class="glyphicon glyphicon-file"></span>&nbsp;'.limit_string($k,20).'</a></li>';
    	else
-   		echo '<li><a href="show_key.php?key='.$k.'">'.$k.'</a></li>';
+   		echo '<li><a href="show_key.php?key='.$k.'"><span class="glyphicon glyphicon-file"></span>&nbsp;'.limit_string($k,20).'</a></li>';
   }
 }
 else
