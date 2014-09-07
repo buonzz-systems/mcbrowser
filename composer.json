@@ -1,7 +1,7 @@
 {
     "name": "buonzz/mcbrowser",
     "description": "An admin to browse Memcached Contents",
-    "keywords": ["memcached", "admin", "browse"],
+    "keywords": ["memcached", "admin", "browse", "cas", "flush", "memcache", "memcacheadmin", "phpmemcacheadmin", "browse memcache"],
     "license": "MIT",
     "type": "project",
     "authors": [
