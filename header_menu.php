@@ -10,7 +10,7 @@
   </div>
   <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#">Create new Entry</a></li>      
+      <li><a href="add_key.php">Create new Entry</a></li>      
     </ul>
     <form class="navbar-form navbar-right">
       <input type="text" class="form-control" placeholder="Search...">
