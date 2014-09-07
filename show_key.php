@@ -7,8 +7,7 @@ require "functions.php";
 require "init.php";
 
 $key = isset($_GET['key']) ? $_GET['key'] : '';
-
-$value = $memcached->get($key);
+$value = $memcached->get($key);  
 ?>
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">     
  	<?php include "header_menu.php";?>
@@ -16,13 +15,14 @@ $value = $memcached->get($key);
 
     <div class="container-fluid">
       <div class="row">
-        <?php include "sidebar.php";?>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">          
-          <h2 class="sub-header">Value of "<?php echo $key;?>"</h2>
-          <div class="well">
-          	<?php echo var_export($value, TRUE); ?>
-          </div>
-  		</div>
+        <?php 
+          include "sidebar.php";
+
+          if($value === FALSE)
+            include "render_invalid_key.php";
+          else
+            include "render_key.php";
+        ?>        
       </div>
     </div>
 <?php include "footer.php"; ?>

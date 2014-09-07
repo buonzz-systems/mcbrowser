@@ -20,8 +20,8 @@ if(count($keys)>0)
 }
 else
  echo '<div class="alert alert-info" role="alert">
-        Seems you got no memcache contents right now
-        <a href="populate.php" class="alert-link">Click this to input sample keys</a>
+        Seems you got no memcache contents right now<br/>
+        <a href="add_key.php" class="alert-link">Add New Entry Now</a>
       </div>';
 ?>  
 </ul>
