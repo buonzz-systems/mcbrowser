@@ -7,6 +7,9 @@
            <div class="btn-group">
             <button type="button" class="btn btn-default">Delete</button>
             <button type="button" class="btn btn-default">Edit</button>
+            <button type="button" class="btn btn-default">Increment</button>
+            <button type="button" class="btn btn-default">Decrement</button>
             <button type="button" class="btn btn-default">Expand</button>
+            <button type="button" class="btn btn-default">Set Expiration Time</button>
           </div>          
   		</div>
