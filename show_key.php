@@ -3,6 +3,7 @@
 include "header.php";
 
 require "config.php";
+require "functions.php";
 require "init.php";
 
 $key = isset($_GET['key']) ? $_GET['key'] : '';

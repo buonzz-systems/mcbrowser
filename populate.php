@@ -1,6 +1,7 @@
 <?php
 
 require "config.php";
+require "functions.php";
 require "init.php";
 
 
